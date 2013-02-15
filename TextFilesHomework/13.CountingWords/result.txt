@@ -1,0 +1,8 @@
+the 4
+words 4
+file 3
+result 2
+that 1
+exceptions 1
+each 1
+abracadabra 0

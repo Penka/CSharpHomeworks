@@ -1,0 +1,27 @@
+1. using System;
+2. using System.IO;
+3. class LineNumbers
+4. {
+5.     static void Main(string[] args)
+6.     {
+7.         string inputFilePath = "../../LineNumbers.cs";
+8.         string outputFilePath = "../../LineNumbers.txt";
+9.         StreamReader inputFile = new StreamReader(inputFilePath);
+10.         using (inputFile)
+11.         {
+12.             StreamWriter outputFile = new StreamWriter(outputFilePath);
+13.             using (outputFile)
+14.             {
+15.                 int lineNumber = 1;
+16.                 string line;
+17.                 while ((line = inputFile.ReadLine()) != null)
+18.                 {
+19.                     outputFile.WriteLine(lineNumber + ". " + line);
+20.                     lineNumber++;
+21.                 }
+22.             }
+23.         }
+24. 
+25.     }
+26. }
+27. 

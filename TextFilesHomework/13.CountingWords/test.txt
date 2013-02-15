@@ -1,0 +1,8 @@
+words
+each
+result
+exceptions
+that
+file
+the
+abracadabra
